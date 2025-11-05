@@ -1,69 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>samuelannor/aboutme</title>
+    <meta name="description" content="Learn more about Samuel Annor - A Ghana-based Computer Science student at KNUST, passionate about React Native, Spring Boot, and aviation.">
+    <title>About Me - Samuel Annor</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container" style="height:100vh ;">
-        <header class="header">
-            <div style="display: flex;gap: 30px; justify-content: center;align-items: center; width: 35%;">
-                <div style="height: 40px;width: 40px;background-color: rgb(147, 147, 147);border-radius: 50%;"></div>
-                <p style="width: 170px; font-size: 25px;font-weight: bolder;font-family:cursive;">About Me</p>
-                <p
-                    style="width: 220px; color: gray; font-family: monospace;font-size: 18px;font-weight: bold;border-left: 3px solid gray;padding-left: 4px;">
-                    Get To Know me</p>
+    <div class="container">
+        <header class="header" role="banner">
+            <div class="header-brand">
+                <div class="logo-circle" aria-label="Logo"></div>
+                <p class="brand-name">About Me</p>
+                <p class="brand-subtitle">Get To Know me</p>
             </div>
-            <div>
-                <nav>
+            <nav role="navigation" aria-label="Main navigation">
                     <ul class="menu-list">
                         <li><a class="menu" href="index.html">Home</a></li>
-                        <li><a class="menu" id="active" href="about.html">About Me</a></li>
+                    <li><a class="menu" id="active" href="about.html" aria-current="page">About Me</a></li>
                         <li><a class="menu" href="explore.html">Explore</a></li>
-                        <li><a style="border: 0px;" class="menu" href="contact.html">Contact</a></li>
+                    <li><a class="menu" href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
         </header>
-        <div style="display: flex;justify-content: center;">
-        <div style="width: 80%; display: flex; justify-content:space-between;align-items: center; margin-top: 70px;">
-            <div style="width: 750px; display: flex;flex-direction: column;gap: 30px;">
-                <p style="color: white;font-weight: bold;">Hello, World! (About Me)</p>
-                <p style="width: 780px;color: gray;">Hi, I’m Samuel, a Ghana-based computer science student at KNUST with a passion for solving real-world
-                    problems through
-                    technology. I enjoy building modern, user-friendly mobile and web applications—most of my recent work blends
-                    React
-                    Native on the frontend with Spring Boot on the backend. <br><br>
-        
-                    I’m always curious and love exploring new ideas, whether it’s designing elegant UI screens, experimenting
-                    with
-                    authentication flows, or analyzing how systems work. My projects often begin as simple ideas and grow into
-                    full
-                    platforms—like apps that connect workers to contractors or tools that help users manage daily tasks.
+        <main role="main">
+            <div class="content-wrapper">
+                <div class="content-container">
+                    <div class="content-text">
+                        <h2 class="section-title">Hello, World! (About Me)</h2>
+                        <p class="section-text">
+                            Hi, I'm Samuel, a Ghana-based computer science student at KNUST with a passion for solving real-world
+                            problems through technology. I enjoy building modern, user-friendly mobile and web applications—most of my recent work blends
+                            React Native on the frontend with Spring Boot on the backend. <br><br>
+                            
+                            I'm always curious and love exploring new ideas, whether it's designing elegant UI screens, experimenting
+                            with authentication flows, or analyzing how systems work. My projects often begin as simple ideas and grow into
+                            full platforms—like apps that connect workers to contractors or tools that help users manage daily tasks.
                     <br><br>
                     Beyond code, I have a deep love for aviation. I dream of building an Aviation Gallery that hosts aircraft
-                    exhibitions,
-                    air shows, and flight-school experiences. I’ve also been interested in creating a spotting community here in
-                    Ghana,
-                    connecting people who share the passion of watching and photographing aircraft.
+                            exhibitions, air shows, and flight-school experiences. I've also been interested in creating a spotting community here in
+                            Ghana, connecting people who share the passion of watching and photographing aircraft.
+                            <br><br>
+                            I value teamwork and leadership; I've previously served as a Public Relations Officer and have worked with
+                            teams of developers on real application concepts, balancing UI design, backend logic, and documentation.
                     <br><br>
-                    I value teamwork and leadership; I’ve previously served as a Public Relations Officer and have worked with
-                    teams of
-                    developers on real application concepts, balancing UI design, backend logic, and documentation.
-                    <br>
                     Every day, I strive to learn, create, and share—to turn imagination into working solutions.
                 </p>
                 <div class="button">
-                    <a style="text-decoration: none;color: #160e42;font-weight: bold;" href="page4.html">Get in touch</a>
+                            <a href="contact.html">Get in touch</a>
                 </div>
             </div>
         </div>
         </div>
+        </main>
     </div>
 </body>
-
 </html>

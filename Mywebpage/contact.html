@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>samuelannor/contact</title>
+    <meta name="description" content="Get in touch with Samuel Annor. Send a message or connect via email, GitHub, or other platforms.">
+    <title>Contact - Samuel Annor</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
-        <header class="header">
-            <div style="display: flex;gap: 30px; justify-content: center;align-items: center; width: 35%;">
-                <div style="height: 40px;width: 40px;background-color: rgb(147, 147, 147);border-radius: 50%;"></div>
-                <p style="width: 170px; font-size: 25px;font-weight: bolder;font-family:cursive;">Reach Out</p>
-                <p
-                    style="width: 220px; color: gray; font-family: monospace;font-size: 18px;font-weight: bold;border-left: 3px solid gray;padding-left: 4px;">
-                    Say Hello</p>
+        <header class="header" role="banner">
+            <div class="header-brand">
+                <div class="logo-circle" aria-label="Logo"></div>
+                <p class="brand-name">Reach Out</p>
+                <p class="brand-subtitle">Say Hello</p>
             </div>
-            <div>
-                <nav>
-                    <ul class="menu-list">
-                        <li><a class="menu" href="index.html">Home</a></li>
-                        <li><a class="menu" href="about.html">About Me</a></li>
-                        <li><a class="menu" href="explore.html">Explore</a></li>
-                        <li><a style="border: 0px;" class="menu" id="active" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="menu-list">
+                    <li><a class="menu" href="index.html">Home</a></li>
+                    <li><a class="menu" href="about.html">About Me</a></li>
+                    <li><a class="menu" href="explore.html">Explore</a></li>
+                    <li><a class="menu" id="active" href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+        <main role="main">
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-text">
+                        I'd love to hear from you! Whether you have a question about my work, want to collaborate on a project, 
+                        or just want to say hello, feel free to reach out. I'll do my best to get back to you as soon as possible.
+                    </p>
+                    <form class="contact-form" action="mailto:annors931@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..." required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <div class="contact-direct-section">
+                        <h3 class="section-title">Or connect directly</h3>
+                        <div class="contact-direct-links">
+                            <div class="footer-item">
+                                <p class="mainword">Email</p>
+                                <a class="linkword" href="mailto:annors931@gmail.com" aria-label="Send email to Samuel Annor">annors931@gmail.com</a>
+                            </div>
+                            <div class="footer-item">
+                                <p class="mainword">WhatsApp</p>
+                                <a class="linkword" target="_blank" href="https://wa.me/233208934181" rel="noopener noreferrer" aria-label="Contact Samuel Annor on WhatsApp">+233 20 893 4181</a>
+                            </div>
+                            <div class="footer-item">
+                                <p class="mainword">TikTok</p>
+                                <a class="linkword" target="_blank" href="https://www.tiktok.com/@movie_editz_fp?_r=1&_t=ZM-919rcFS2D4y" rel="noopener noreferrer" aria-label="Follow Samuel Annor on TikTok">@movie_editz_fp</a>
+                            </div>
+                            <div class="footer-item">
+                                <p class="mainword">Github</p>
+                                <a class="linkword" target="_blank" href="https://github.com/Ruddersam" rel="noopener noreferrer" aria-label="Visit Samuel Annor's GitHub profile">github.com/Ruddersam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
-
 </html>

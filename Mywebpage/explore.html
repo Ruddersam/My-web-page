@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>samuelannor/explore</title>
+    <meta name="description" content="Explore Samuel Annor's projects and creative work including web development, mobile apps, video editing with CapCut, and technology solutions.">
+    <title>Explore - Samuel Annor's Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
-        <header class="header">
-            <div style="display: flex;gap: 30px; justify-content: center;align-items: center; width: 35%;">
-                <div style="height: 40px;width: 40px;background-color: rgb(147, 147, 147);border-radius: 50%;"></div>
-                <p style="width: 170px; font-size: 25px;font-weight: bolder;font-family:cursive;">Explore</p>
-                <p
-                    style="width: 220px; color: gray; font-family: monospace;font-size: 18px;font-weight: bold;border-left: 3px solid gray;padding-left: 4px;">
-                    My Creative Space</p>
+        <header class="header" role="banner">
+            <div class="header-brand">
+                <div class="logo-circle" aria-label="Logo"></div>
+                <p class="brand-name">Explore</p>
+                <p class="brand-subtitle">My Creative Space</p>
             </div>
-            <div>
-                <nav>
-                    <ul class="menu-list">
-                        <li><a class="menu" href="index.html">Home</a></li>
-                        <li><a class="menu" href="about.html">About Me</a></li>
-                        <li><a class="menu" id="active" href="explore.html">Explore</a></li>
-                        <li><a style="border: 0px;" class="menu" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="menu-list">
+                    <li><a class="menu" href="index.html">Home</a></li>
+                    <li><a class="menu" href="about.html">About Me</a></li>
+                    <li><a class="menu" id="active" href="explore.html" aria-current="page">Explore</a></li>
+                    <li><a class="menu" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+        <main role="main">
+            <div class="projects-container">
+                <div>
+                    <!-- Video Editing Section -->
+                    <div class="creative-section">
+                        <h2 class="section-title">Creative Work</h2>
+                        <p class="section-text">
+                            Beyond coding, I'm passionate about video editing and creating engaging visual content.
+                        </p>
+                        <div class="projects-grid creative-grid">
+                            <div class="project-card featured-card">
+                                <div class="project-badge">Video Editor</div>
+                                <h3 class="project-title">CapCut Video Editor</h3>
+                                <p class="project-description">
+                                    I'm a professional CapCut editor specializing in creating dynamic, engaging video content. 
+                                    From cinematic transitions to creative effects, I bring stories to life through video editing. 
+                                    Check out my work on TikTok where I share my latest edits and creative projects.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">CapCut</span>
+                                    <span class="tech-tag">Video Editing</span>
+                                    <span class="tech-tag">Creative Content</span>
+                                    <span class="tech-tag">Social Media</span>
+                                </div>
+                                <a href="https://www.tiktok.com/@movie_editz_fp?_r=1&_t=ZM-919rcFS2D4y" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View my video edits on TikTok">
+                                    View on TikTok →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coding Projects Section -->
+                    <h2 class="section-title">Development Projects</h2>
+                    <p class="section-text">
+                        I'm currently working on several exciting development projects. Check back soon to see my latest work 
+                        in web development, mobile apps, and technology solutions!
+                    </p>
+                    <div class="coming-soon-container">
+                        <div class="coming-soon-card">
+                            <div class="work-in-progress-icon">⚡</div>
+                            <h3 class="coming-soon-title">Work in Progress</h3>
+                            <p class="coming-soon-text">
+                                I'm actively developing new projects and learning new technologies. 
+                                Development projects will be showcased here soon!
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Coming Soon</span>
+                                <span class="tech-tag">In Development</span>
+                            </div>
+                            <a href="https://github.com/Ruddersam" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                                Check out my GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
-
 </html>
